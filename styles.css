@@ -79,3 +79,15 @@ section {
     filter: blur(10px);
     z-index: -1;
 }
+
+.title-page {
+    font-size: 3.9rem; 
+    font-family: 'garamond', serif;
+    color: #FFFDD0;
+}
+
+.title-message {
+    font-size: 1.5rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'garamond', serif;
+}
