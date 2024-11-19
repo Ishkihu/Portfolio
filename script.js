@@ -13,4 +13,19 @@ document.addEventListener("DOMContentLoaded", function() {
     sections.forEach(section => {
         observer.observe(section);
     });
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links').querySelector('ul');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('nav-visible');
+        hamburger.classList.toggle('active');
+    });
+
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            navLinks.classList.remove('nav-visible');
+            hamburger.classList.remove('active');
+        }
+    });
 });

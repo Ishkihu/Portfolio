@@ -52,3 +52,24 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    #nav-links ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav-links ul.nav-visible {
+        display: flex;
+    }
+
+    #nav-links ul li {
+        margin: 10px 0;
+    }
+}
