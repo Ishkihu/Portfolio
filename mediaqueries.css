@@ -1,0 +1,42 @@
+@media (min-width: 1024px) {
+    .about-left, .about-right {
+        width: 30%;
+    }
+
+    .tool {
+        width: 25%; 
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .about-left, .about-right {
+        width: 45%;
+    }
+
+    .tool {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left, .about-right {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .social-icons {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cv-download {
+        width: auto;
+        text-align: center;
+    }
+}
