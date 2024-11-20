@@ -73,3 +73,19 @@
         margin: 10px 0;
     }
 }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-left, .about-right {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .about-right {
+        text-align: center;
+    }
+}
