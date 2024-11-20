@@ -52,19 +52,4 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('load', run);
     window.addEventListener('resize', run);
     window.addEventListener('scroll', run);
-
-    const form = document.getElementById('contact-form');
-    const successMessage = document.getElementById('message-sent');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault(); 
-
-        successMessage.style.display = 'block';
-
-        setTimeout(function() {
-            successMessage.style.display = 'none';
-        }, 3000);
-
-        form.reset();
-    });
 });
