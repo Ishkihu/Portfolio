@@ -54,20 +54,17 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', run);
 
     const form = document.getElementById('contact-form');
-    const successMessage = document.getElementById('success-message');
+    const successMessage = document.getElementById('message-sent');
 
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
+        event.preventDefault(); 
 
-        // Show the success message
         successMessage.style.display = 'block';
 
-        // Hide the success message after the animation ends
         setTimeout(function() {
             successMessage.style.display = 'none';
         }, 3000);
 
-        // Optionally, you can reset the form fields
         form.reset();
     });
 });

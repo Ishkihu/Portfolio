@@ -171,19 +171,50 @@
     </section>
 
     <section id="project" class="projects section-hidden">
-    
+        <div class="projects-container">
+            <h2>PROJECTS</h2>
+            <p class="projects-desc">These are some of the projects I've worked on<br> Click to learn more!</p>
+            <div class="project-cards">
+                <a href="https://github.com/Ishkihu/RouletteGame" target="_blank" class="project-card">
+                    <img src="Assets/coin.jpg" alt="FortunaQuest" class="project-image">
+                    <div class="project-card-content">
+                        <h3>Fortuna Quest</h3>
+                        <p class="project-card-text">A simple program developed in C that accepts input and uses a
+                            random number generator to determine the outcome of the user's choice.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Ishkihu/BinaryEncryption-Decryption" target="_blank" class="project-card">
+                    <img src="Assets/binary.jpg" alt="Binary" class="project-image">
+                    <div class="project-card-content">
+                        <h3>PlainText Encryption & Decryption</h3>
+                        <p class="project-card-text">A C++ program that uses rudimentary
+                            applications of binary encryption to protect original messages
+                            from being read by unauthorized users. This is done through Text Files</p>
+                    </div>
+                </a>
+                <a href="https://github.com/Ishkihu/LoginSystem-Database" target="_blank" class="project-card">
+                    <img src="Assets/login.png" alt="LoginSystem" class="project-image">
+                    <div class="project-card-content">
+                        <h3>Database Login System</h3>
+                        <p class="project-card-text">An introductory application of MySQL concepts with Java
+                            as its programming language, this program allows users to register and login to the system
+                            and stores their data to a database.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
     
     <section id="contact" class="contact section-hidden">
         <div class="contact-container">
-            <h2>Get in Touch</h2>
+            <h2>Reach Out To Me!</h2>
             <form action="contact.php" method="POST" class="contact-form" id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
-            <div class="success-message" id="success-message">Your message has been sent!</div>
+            <div class="message-sent" id="message-sent">Your message has been sent!</div>
         </div>
     </section>
 
